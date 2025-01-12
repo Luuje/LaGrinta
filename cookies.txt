@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+bison-grouper-32gm.squarespace.com	TRUE	/	FALSE	1999999999	crumb	BU4XYMTVCghKODEwYzIyNmFjYjQzZTY1MDc2MDkwYTVlYzMzODU0
+
