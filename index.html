@@ -69,6 +69,7 @@
   <link rel="stylesheet" type="text/css" href="css/website.components.shape.styles.css" />
   <script defer src="js/website.components.shape.visitor.js"></script><!-- End of Squarespace Headers -->
   <link rel="stylesheet" type="text/css" href="css/static.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
 </head>
 
 <body id="collection-675ae1570f9ab67d25897e1a" class="
@@ -715,7 +716,19 @@
           <div class='content-wrapper' style='
                      padding-top: calc(0vmax / 10); padding-bottom: calc(0vmax / 10);
                      '>
+
             <div class="content">
+
+              <div id="bento-grid-placeholder"></div>
+              <script>
+                fetch('bento.html')
+                  .then(response => response.text())
+                  .then(data => {
+                    document.getElementById('bento-grid-placeholder').innerHTML = data;
+                  });
+              </script>
+
+
               <div data-fluid-engine="true">
                 <style>
                   .fe-6764651f3a2ab63fb5403230 {
@@ -1948,6 +1961,7 @@
                     }
                   }
                 </style>
+
                 <div class="fluid-engine fe-6764651f3a2ab63fb5403230">
                   <div class="fe-block fe-block-yui_3_17_2_1_1735888514875_17003">
                     <div
@@ -2061,20 +2075,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="fe-block fe-block-yui_3_17_2_1_1736683858382_14389">
-                    <div class="sqs-block code-block sqs-block-code" data-block-type="23"
-                      id="block-yui_3_17_2_1_1736683858382_14389">
-                      <div class="sqs-block-content">
-                        <p class="top-text">Some text that is totally safe to be here</p>
-                        <h1>
-                          Take
-                          <span id="change"><span class="old">coding</span></span>
-                          further
-                        </h1>
-                        <p>Amazing Landing Page copy</p>
-                      </div>
-                    </div>
-                  </div>
                   <div class="fe-block fe-block-yui_3_17_2_1_1735841282367_28404">
                     <div
                       class="sqs-block website-component-block sqs-block-website-component website-component-block sqs-block-website-component"
@@ -2154,72 +2154,6 @@
                             opacity: 0;
                           }
                         </style>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="fe-block fe-block-yui_3_17_2_1_1736683858382_48511">
-                    <div class="sqs-block code-block sqs-block-code" data-block-type="23"
-                      id="block-yui_3_17_2_1_1736683858382_48511">
-                      <div class="sqs-block-content">
-                        <pre class="source-code">:root {
-  background: #2E3147;
-  color: #fdfdfd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100%;
-  font-family: system-ui, -apple-system,
-    BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen,
-    Ubuntu, Cantarell, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, 
-    sans-serif;
-}
-
-:root:before {
-  position: absolute;
-  font-size: 5rem;
-  top: 33vh;
-  left: 0rem;
-  right: 18rem;
-  text-align: center;
-  opacity: 0.3;
-  content: '🎉'
-}
-
-:root * {
-  z-index: 1;
-}
-
-h1, p {
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-.top-text {
-  font-style: italic;
-  margin-bottom: 0.5rem;
-}
-
-/* The changing word */
-
-#change {
-  position: relative;
-  white-space: nowrap;
-}
-
-#change .new {
-  position: absolute;
-  user-select: none;
-  left: 0px;
-  bottom: 0.9em;
-  opacity: 0;
-}
-
-#change .old {
-  display: inline-block;
-  position: relative;
-  top: 0px;
-}
-</pre>
                       </div>
                     </div>
                   </div>
@@ -2733,78 +2667,7 @@ h1, p {
                       </div>
                     </div>
                   </div>
-                  <div class="fe-block fe-block-yui_3_17_2_1_1736384127328_739553">
-                    <div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2"
-                      data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;"
-                      id="block-yui_3_17_2_1_1736384127328_739553">
-                      <div class="sqs-block-content">
-                        <div class="sqs-html-content">
-                          <div class="sqsrte-scaled-text-container">
-                            <span class="sqsrte-scaled-text">
-                              <p class="" style="white-space:pre-wrap;">WIP</p>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="fe-block fe-block-yui_3_17_2_1_1736683858382_60929">
-                    <div class="sqs-block embed-block sqs-block-embed"
-                      data-block-json="&#123;&quot;customThumbEnabled&quot;:false,&quot;html&quot;:&quot;:root &#123;\n  background: #2E3147;\n  color: #fdfdfd;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 100%;\n  font-family: system-ui, -apple-system,\n    BlinkMacSystemFont, \&quot;Segoe UI\&quot;, Roboto, Oxygen,\n    Ubuntu, Cantarell, \&quot;Open Sans\&quot;, \&quot;Helvetica Neue\&quot;, \n    sans-serif;\n&#125;\n\n:root:before &#123;\n  position: absolute;\n  font-size: 5rem;\n  top: 33vh;\n  left: 0rem;\n  right: 18rem;\n  text-align: center;\n  opacity: 0.3;\n  content: '\uD83C\uDF89'\n&#125;\n\n:root * &#123;\n  z-index: 1;\n&#125;\n\nh1, p &#123;\n  text-align: center;\n  margin-top: 0.5rem;\n&#125;\n\n.top-text &#123;\n  font-style: italic;\n  margin-bottom: 0.5rem;\n&#125;\n\n/* The changing word */\n\n#change &#123;\n  position: relative;\n  white-space: nowrap;\n&#125;\n\n#change .new &#123;\n  position: absolute;\n  user-select: none;\n  left: 0px;\n  bottom: 0.9em;\n  opacity: 0;\n&#125;\n\n#change .old &#123;\n  display: inline-block;\n  position: relative;\n  top: 0px;\n&#125;\n&quot;&#125;"
-                      data-block-type="22" id="block-yui_3_17_2_1_1736683858382_60929">
-                      <div class="sqs-block-content">:root {
-                        background: #2E3147;
-                        color: #fdfdfd;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        min-height: 100%;
-                        font-family: system-ui, -apple-system,
-                        BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-                        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-                        sans-serif;
-                        }
-                        :root:before {
-                        position: absolute;
-                        font-size: 5rem;
-                        top: 33vh;
-                        left: 0rem;
-                        right: 18rem;
-                        text-align: center;
-                        opacity: 0.3;
-                        content: '🎉'
-                        }
-                        :root * {
-                        z-index: 1;
-                        }
-                        h1, p {
-                        text-align: center;
-                        margin-top: 0.5rem;
-                        }
-                        .top-text {
-                        font-style: italic;
-                        margin-bottom: 0.5rem;
-                        }
-                        /* The changing word */
-                        #change {
-                        position: relative;
-                        white-space: nowrap;
-                        }
-                        #change .new {
-                        position: absolute;
-                        user-select: none;
-                        left: 0px;
-                        bottom: 0.9em;
-                        opacity: 0;
-                        }
-                        #change .old {
-                        display: inline-block;
-                        position: relative;
-                        top: 0px;
-                        }
-                      </div>
-                    </div>
-                  </div>
+
                   <div class="fe-block fe-block-yui_3_17_2_1_1735853356296_1112384">
                     <div class="sqs-block button-block sqs-block-button" data-block-type="53"
                       id="block-yui_3_17_2_1_1735853356296_1112384">

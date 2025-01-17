@@ -30743,6 +30743,7 @@ body:not(.header--menu-open) [data-header-style="gradient"].header .language-pic
 
 body:not(.header--menu-open) .header .header-announcement-bar-wrapper [data-header-style="solid"].header-background-solid {
     background-color: var(--solidHeaderBackgroundColor);
+    background-color: rgb(255, 255, 255);
 }
 
 body:not(.header--menu-open) .header .header-announcement-bar-wrapper [data-header-style="gradient"][data-gradient-type="faded"].header-background-gradient {
