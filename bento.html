@@ -18,6 +18,10 @@
             --dark-gray: #565656;
         }
 
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
         .row {
             display: flex;
             flex-direction: row;
@@ -49,6 +53,9 @@
             justify-content: center;
             align-self: center;
             padding: 6rem;
+
+            font-weight: 600;
+            font-style: italic;
         }
 
         .background-shape {
@@ -127,7 +134,6 @@
             background: none;
             color: var(--primary-red);
             font-size: 1.2rem;
-            font-weight: bold;
             text-align: center;
         }
 
@@ -157,13 +163,11 @@
 
         .bento-item-figure .figure-number {
             font-size: 3rem;
-            font-weight: bold;
             display: block;
         }
 
         .bento-item-figure .figure-text {
             font-size: 3rem;
-            font-weight: normal;
             color: var(--black);
         }
 
@@ -239,7 +243,7 @@
                 <span style=" font-size: 1.7rem; line-height: 1.7rem; color: var(--black);">AU COMPORTEMENTAL< </span>
             </div>
 
-            <div class=" bento-item" style="grid-column: 3 / 4; grid-row: span 2">
+            <div class=" bento-item" style="grid-column: 3 / 4; grid-row: span 1">
                 <div class="col">
                     <span style="font-size: 1.2rem; line-height: 1.2rem;">Analyse</span>
                     <span style="font-size: 1.7rem; line-height: 1.7rem;">comportementale</span>
@@ -264,6 +268,10 @@
                 <img src="images/target.png" style="width: 120px; margin-left: 1.5rem;">
             </div>
 
+            <div class="bento-item" style="grid-column: 3 / 4">
+                <p>Performance redéfinie</p>
+            </div>
+
             <div class="bento-item" style="grid-column: 7 / 9;">
                 <p>L'innovation commence quand</p>
             </div>
@@ -271,10 +279,6 @@
 
             <div class="bento-item bento-item-green" style="grid-column: 9 / 10;">
                 <img src="images/qualiopi.png" style="width: 140px; ">
-            </div>
-
-            <div class="bento-item" style="grid-column: 4 / 7">
-                <p>Performance redéfinie</p>
             </div>
 
 
