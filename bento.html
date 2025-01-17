@@ -12,10 +12,20 @@
             --primary-red: rgb(255, 0, 53);
             --secondary-red: rgba(255, 0, 51, 0.173);
             --light-red: rgb(255, 224, 230);
-            --light-green: rgb(141, 255, 100);
+            --light-green: rgb(232, 255, 224);
             --black: #272727;
             --light-gray: #efefef;
             --dark-gray: #565656;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
         }
 
         .red {
@@ -68,8 +78,8 @@
             display: flex;
             align-self: center;
             align-items: center;
-            justify-content: left;
-            text-align: left;
+            justify-content: center;
+            text-align: center;
             box-sizing: border-box;
             height: 100%;
             background-color: var(--light-gray);
@@ -168,6 +178,11 @@
             color: black;
         }
 
+        .bento-item-green {
+            background: var(--light-green);
+            color: black;
+        }
+
         @media (max-width: 768px) {
             .bento-grid {
                 grid-template-columns: 1fr;
@@ -225,7 +240,11 @@
             </div>
 
             <div class=" bento-item" style="grid-column: 3 / 4; grid-row: span 2">
-                <p>Solutions de formation sur mesure</p>
+                <div class="col">
+                    <span style="font-size: 1.2rem; line-height: 1.2rem;">Analyse</span>
+                    <span style="font-size: 1.7rem; line-height: 1.7rem;">comportementale</span>
+                </div>
+                <img src="images/target.png" style="width: 120px; margin-left: 1.5rem;">
             </div>
 
             <div class="bento-item bento-item-figure" style="grid-column: 7/ 8; ">
@@ -237,8 +256,12 @@
                 <p>L'innovation commence ou</p>
             </div>
 
-            <div class="bento-item" style="grid-column: 1 / 3;">
-                <p>L'innovation commence ici</p>
+            <div class="bento-item bento-item-green" style="grid-column: 1 / 3;">
+                <div class="col">
+                    <span style="font-size: 1.2rem; line-height: 1.2rem;">Préparation</span>
+                    <span style="font-size: 1.7rem; line-height: 1.7rem;">mentale</span>
+                </div>
+                <img src="images/target.png" style="width: 120px; margin-left: 1.5rem;">
             </div>
 
             <div class="bento-item" style="grid-column: 7 / 9;">
@@ -246,8 +269,8 @@
             </div>
 
 
-            <div class="bento-item" style="grid-column: 9 / 10;">
-                <p>L'innovation commence là</p>
+            <div class="bento-item bento-item-green" style="grid-column: 9 / 10;">
+                <img src="images/qualiopi.png" style="width: 140px; ">
             </div>
 
             <div class="bento-item" style="grid-column: 4 / 7">
