@@ -12,6 +12,7 @@
             --primary-red: rgb(255, 0, 53);
             --secondary-red: rgba(255, 0, 51, 0.173);
             --light-red: rgb(255, 224, 230);
+            --dark-red: rgb(180, 104, 120);
             --light-green: rgb(232, 255, 224);
             --black: #272727;
             --light-gray: #efefef;
@@ -91,7 +92,7 @@
             height: 100%;
             background-color: var(--light-gray);
             padding: 2rem;
-
+            overflow: hidden;
         }
 
         /* Normal Bento Items */
@@ -174,11 +175,15 @@
         /* Gray Background Bento Items */
         .bento-item-gray {
             background: var(--dark-gray);
-            color: black;
         }
 
         .bento-item-red {
             background: var(--light-red);
+            color: black;
+        }
+
+        .bento-item-dark-red {
+            background: var(--dark-red);
             color: black;
         }
 
@@ -251,10 +256,17 @@
                 <img src="images/target.png" style="width: 120px; margin-left: 1.5rem;">
             </div>
 
-            <div class="bento-item bento-item-figure" style="grid-column: 7/ 8; ">
-                <span class="figure-number" style=" font-size: 2.5rem; line-height: 2.5rem;">2000+</span>
-                <span class="figure-text" style=" font-size: 1rem; line-height: 1rem;">Personnes formées</span>
+            <div class="bento-item bento-item-figure" style="grid-column: 4 / 6; grid-row: span 2; min-height: 150px;">
+                <div class="col" style="width: 100%; height: 70%; position: absolute; top: 10%; z-index: 2;">
+                    <span class="figure-number red"
+                        style=" font-size: 2.7rem; line-height: 2.7rem; margin-bottom: 0.2rem;">2000+</span>
+                    <span class="figure-text" style=" font-size: 1.3rem; line-height: 1.3rem;">PERSONNES</span>
+                    <span class="figure-text" style=" font-size: 1.3rem; line-height: 1.3rem;">ACCOMPAGNEES</span>
+                </div>
+                <img src="images/para.png"
+                    style="width: 100%; height: 50%; position: absolute; bottom: 0px; opacity: 0.9; object-fit: cover; object-position: top;">
             </div>
+
 
             <div class="bento-item" style="grid-column: 8 / 10;">
                 <p>L'innovation commence ou</p>
