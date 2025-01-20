@@ -10,13 +10,14 @@
     <style>
         :root {
             --primary-red: rgb(255, 0, 53);
-            --secondary-red: rgba(255, 0, 51, 0.173);
+            --secondary-red: rgba(165, 21, 50, 0.173);
             --light-red: rgb(255, 224, 230);
-            --dark-red: rgb(180, 104, 120);
-            --light-green: rgb(232, 255, 224);
+            --light-red2: rgb(255, 169, 186);
+            --dark-red: rgb(229, 130, 130);
+            --light-green: rgb(222, 253, 208);
             --black: #272727;
-            --light-gray: #efefef;
-            --dark-gray: #565656;
+            --light-gray: #f0f0f0;
+            --dark-gray: #aaaaaa;
         }
 
         * {
@@ -26,6 +27,7 @@
         .row {
             display: flex;
             flex-direction: row;
+            justify-content: center;
         }
 
         .col {
@@ -35,6 +37,10 @@
 
         .red {
             color: var(--primary-red);
+        }
+
+        .light-red {
+            color: var(--light-red2);
         }
 
         .white {
@@ -55,7 +61,7 @@
             align-self: center;
             padding: 6rem;
 
-            font-weight: 600;
+            font-weight: 800;
             font-style: italic;
         }
 
@@ -69,9 +75,8 @@
             /* Place behind the content */
         }
 
-
-
         .bento-grid {
+            max-width: 1000px;
             display: grid;
             align-self: center;
             grid-template-columns: repeat(9, 1fr);
@@ -143,11 +148,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: white;
             text-align: center;
             gap: 0px;
             padding: 0px;
-            background: var(--secondary-red);
+            color: white;
+            background: none;
         }
 
         /* Catch Phrase Styling */
@@ -175,6 +180,7 @@
         /* Gray Background Bento Items */
         .bento-item-gray {
             background: var(--dark-gray);
+            color: white;
         }
 
         .bento-item-red {
@@ -184,12 +190,16 @@
 
         .bento-item-dark-red {
             background: var(--dark-red);
-            color: black;
+            color: white;
         }
 
         .bento-item-green {
             background: var(--light-green);
             color: black;
+        }
+
+        .bento-item-transparent {
+            background: transparent;
         }
 
         @media (max-width: 768px) {
@@ -228,85 +238,92 @@
 
 
 
-            <div class="bento-item bento-item-title" style="grid-column: 1 / 3; grid-row: span 2;">
+
+            <div class="bento-item bento-item-title" style="grid-column: 1 / 4; grid-row: span 2;">
                 <img src="images/lagrinta_eclair_rouge.png" style="width: 4rem; margin-bottom: 1rem">
-                <span class="catchphrase-text black" style=" font-size: 2.5rem; line-height: 2.5rem;">REBRANCHEZ</span>
-                <span class="catchphrase-text red" style=" font-size: 2.6rem; line-height: 2.6rem;">VOS ÉQUIPES</span>
-                <span class=" catchphrase-text black" style=" font-size: 3.6rem; line-height: 3.5rem;">SUR 220V</span>
+                <span class="catchphrase-text black" style=" font-size: 3.2rem; line-height: 3.5rem;">REBRANCHEZ</span>
+                <span class="catchphrase-text red" style=" font-size: 3.3rem; line-height: 3.6rem;">VOS ÉQUIPES</span>
+                <span class=" catchphrase-text black" style=" font-size: 4.5rem; line-height: 4rem;">SUR 220V</span>
             </div>
 
-            <div class="bento-item" style="grid-column: 3 / 4" ;>
-                <p>Rejoignez le mouvement</p>
-            </div>
-
-            <div class="bento-item bento-item-image" style="grid-column: 4 / 7; grid-row: span 3;">
+            <div class=" bento-item bento-item-image" style="grid-column: 4 / 7; grid-row: span 3;">
                 <img src="images/img_9695(2).jpg">
             </div>
 
-            <div class="bento-item bento-item-title" style="grid-column: 7 / 10; grid-row: span 1;">
-                <span class="red" style=" font-size: 3.4rem; line-height: 3.4rem;">>DU MENTAL</span>
-                <span style=" font-size: 1.7rem; line-height: 1.7rem; color: var(--black);">AU COMPORTEMENTAL< </span>
-            </div>
-
-            <div class=" bento-item" style="grid-column: 3 / 4; grid-row: span 1">
+            <div class="bento-item" style="grid-column: 7 / 10; grid-row: span 1;">
                 <div class="col">
-                    <span style="font-size: 1.2rem; line-height: 1.2rem;">Analyse</span>
-                    <span style="font-size: 1.7rem; line-height: 1.7rem;">comportementale</span>
+                    <span class="red" style=" font-size: 3rem; line-height: 3.1rem;">>DU MENTAL</span>
+                    <span style=" font-size: 1.6rem; line-height: 1.8rem; color: var(--black);">AU COMPORTEMENTAL<
+                            </span>
                 </div>
-                <img src="images/target.png" style="width: 120px; margin-left: 1.5rem;">
-            </div>
-
-            <div class="bento-item bento-item-figure" style="grid-column: 4 / 6; grid-row: span 2; min-height: 150px;">
-                <div class="col" style="width: 100%; height: 70%; position: absolute; top: 10%; z-index: 2;">
-                    <span class="figure-number red"
-                        style=" font-size: 2.7rem; line-height: 2.7rem; margin-bottom: 0.2rem;">2000+</span>
-                    <span class="figure-text" style=" font-size: 1.3rem; line-height: 1.3rem;">PERSONNES</span>
-                    <span class="figure-text" style=" font-size: 1.3rem; line-height: 1.3rem;">ACCOMPAGNEES</span>
-                </div>
-                <img src="images/para.png"
-                    style="width: 100%; height: 50%; position: absolute; bottom: 0px; opacity: 0.9; object-fit: cover; object-position: top;">
             </div>
 
 
-            <div class="bento-item" style="grid-column: 8 / 10;">
-                <p>L'innovation commence ou</p>
-            </div>
-
-            <div class="bento-item bento-item-green" style="grid-column: 1 / 3;">
+            <div class="bento-item col" style="grid-column: 7  / 8;">
                 <div class="col">
-                    <span style="font-size: 1.2rem; line-height: 1.2rem;">Préparation</span>
-                    <span style="font-size: 1.7rem; line-height: 1.7rem;">mentale</span>
+                    <span style="font-size: 1.4rem; line-height: 1.4rem;">Prépa.</span>
+                    <span class="red" style="font-size: 1.2rem; line-height: 1.2rem;">mentale</span>
                 </div>
-                <img src="images/target.png" style="width: 120px; margin-left: 1.5rem;">
-            </div>
-
-            <div class="bento-item" style="grid-column: 3 / 4">
-                <p>Performance redéfinie</p>
-            </div>
-
-            <div class="bento-item" style="grid-column: 7 / 9;">
-                <p>L'innovation commence quand</p>
             </div>
 
 
-            <div class="bento-item bento-item-green" style="grid-column: 9 / 10;">
+            <div class="bento-item col" style="grid-column: 8  / 10;">
+                <div class="col">
+                    <span style="font-size: 1.6rem; line-height: 1.6rem;">Analyse</span>
+                    <span class="red" style="font-size: 1rem; line-height: 1rem;">comportementale</span>
+                </div>
+            </div>
+
+            <div class="bento-item bento-item-image" style="grid-column: 1 / 2 ; grid-row: span 2;" ;>
+                <img src="images/jump.jpg" style="">
+            </div>
+
+
+            <div class="bento-item" style="grid-column: 2 / 4;">
+                <div class="col">
+                    <p>Rejoignez le mouvement avec</p>
+                    <img src="images/lagrintacademie.png" style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="bento-item bento-item-image" style="grid-column: 7  / 9; ">
+                <img src="images/methode-target.png" style="height: 40px; ">
+            </div>
+
+
+            <div class="bento-item bento-item-image" style="grid-column: 9  / 10; ">
+                <img src="images/quad.jpg">
+            </div>
+
+
+            <div class="bento-item " style="grid-column: 2 / 4;">
                 <img src="images/qualiopi.png" style="width: 140px; ">
             </div>
 
+            <div class="bento-item bento-item-figure" style="grid-column: 4 / 7; min-height: 200px;">
+                <div class="row" style="width: 100%; height: 70%; position: absolute; top: 10%; z-index: 2;">
+                    <span class="figure-number red"
+                        style=" font-size: 2.6rem; line-height: 2.7rem; margin-right: 0.7rem;">2000+</span>
+                    <div class="col">
+                        <span class="figure-text" style=" font-size: 1.45rem; line-height: 1.7rem;">Personnes</span>
+                        <span class="figure-text" style=" font-size: 1rem; line-height: 1rem;">accompagnées</span>
 
-            <div class="fe-block fe-block-082972e1b773712c4690" style="grid-column: 1 / 2">
-                <div class="sqs-block button-block sqs-block-button" data-block-type="53"
-                    id="block-082972e1b773712c4690">
-                    <div class="sqs-block-content">
-                        <div class="sqs-block-button-container sqs-block-button-container--center"
-                            data-animation-role="button" data-alignment="center" data-button-size="large"
-                            data-button-type="secondary">
-                            <a href="offres.html"
-                                class="sqs-block-button-element--large sqs-button-element--secondary sqs-block-button-element">
-                                CONTACTEZ-NOUS ! ➜
-                            </a>
-                        </div>
                     </div>
+                </div>
+                <img src="images/para.png"
+                    style="width: 100%; position: absolute; bottom: 0px; opacity: 0.9; object-fit: cover; object-position: bottom;">
+            </div>
+
+
+
+            <div class="fe-block fe-block-082972e1b773712c4690" style="grid-column: 8 / 10">
+
+                <div class="sqs-block-button-container sqs-block-button-container--center" data-animation-role="button"
+                    data-alignment="center" data-button-size="large" data-button-type="secondary">
+                    <a href="offres.html"
+                        class="sqs-block-button-element--large sqs-button-element--secondary sqs-block-button-element">
+                        CONTACTEZ-NOUS ! ➜
+                    </a>
                 </div>
             </div>
 
