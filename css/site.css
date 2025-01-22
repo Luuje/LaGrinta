@@ -4904,18 +4904,18 @@
 }
 
 :root {
-    --primary-button-rounded-border-top-left-radius: 14px;
-    --primary-button-rounded-border-top-right-radius: 14px;
-    --primary-button-rounded-border-bottom-left-radius: 14px;
-    --primary-button-rounded-border-bottom-right-radius: 14px;
+    --primary-button-rounded-border-top-left-radius: 3px;
+    --primary-button-rounded-border-top-right-radius: 3px;
+    --primary-button-rounded-border-bottom-left-radius: 3px;
+    --primary-button-rounded-border-bottom-right-radius: 3px;
     --primaryButtonPadding: 1.2em;
     --primary-button-padding-x: 1.3rem;
     --primary-button-padding-y: 1rem;
     --primary-button-stroke: 0px;
-    --secondary-button-rounded-border-top-left-radius: 14px;
-    --secondary-button-rounded-border-top-right-radius: 14px;
-    --secondary-button-rounded-border-bottom-left-radius: 14px;
-    --secondary-button-rounded-border-bottom-right-radius: 14px;
+    --secondary-button-rounded-border-top-left-radius: 3px;
+    --secondary-button-rounded-border-top-right-radius: 3px;
+    --secondary-button-rounded-border-bottom-left-radius: 3px;
+    --secondary-button-rounded-border-bottom-right-radius: 3px;
     --secondary-button-padding-x: 1.3rem;
     --secondary-button-padding-y: 1rem;
     --secondary-button-stroke: 0px;
