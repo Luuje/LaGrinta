@@ -11,6 +11,23 @@
     --darkAccent-hsl: 0, 0%, 15.69%;
 }
 
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+}
+
 [data-section-theme="white"] {
     --course-item-nav-text-color: hsla(var(--black-hsl), 1);
     --tweak-blog-item-pagination-icon-color: hsla(var(--black-hsl), 1);
