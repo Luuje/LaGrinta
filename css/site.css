@@ -46660,7 +46660,10 @@ body {
     align-items: center;
 }
 
-h3 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 800;
     font-style: italic;
 }
@@ -46683,40 +46686,80 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
     width: 600px;
 }
 
+#insufflez p {
+    margin-bottom: 30px;
+}
+
 .bloc-rouge {
-    margin: 30px 0px;
+    margin: 14px 0px;
 }
 
 .bloc-rouge-wrapper {
     background-color: var(--primary-red);
-    border-radius: 3px;
-    padding: 30px;
+    border-radius: 5px;
+    padding: 6px 50px;
 }
 
 .bloc-rouge * {
     color: white;
 }
 
-#insufflez h4 {
+.bloc-rouge h4 {
     font-weight: 900;
     font-style: italic;
-    margin: 1rem 3rem;
+    margin: 1rem 2rem;
 }
 
-#insufflez h2 {
+.bloc-rouge h2 {
     align-self: left;
     text-align: left;
-    margin: 0px;
+    margin: 20px 20px 0px 20px;
 }
 
-#nosvaleurs * {
+.bloc-rouge p {
+    margin: 10px 20px 0px 20px;
+}
+
+
+#equation {
+    background-color: var(--primary-red);
+    width: 200%;
+    padding: 100px;
+    margin: 100px;
+}
+
+#equation em {
     color: white;
+}
+
+#equation em.equation-item {
+    background-color: white;
+    color: var(--primary-red);
+    padding: 6px 20px;
+    margin: 24px;
+    border-radius: 3px;
+    line-height: 80px;
+}
+
+#nosvaleurs * {}
+
+#nosvaleurs h2 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 #nosvaleurs .sqs-block-button-element {
     color: var(--primary-red);
+}
+
+#nosvaleurs img {
+    width: 350px;
+    border-radius: 5px;
+}
+
+.text-block {
+    width: 350px;
 }
