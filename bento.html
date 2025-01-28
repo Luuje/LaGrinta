@@ -49,7 +49,7 @@
             align-items: center;
             justify-content: center;
             align-self: center;
-            padding: 1rem;
+            padding: 0px;
             margin: 4rem auto;
 
             font-weight: 800;
@@ -210,7 +210,7 @@
 
         @media (max-width: 768px) {
             .bento-grid-section {
-                padding: 1rem;
+                padding: 0px;
             }
 
             .bento-grid {
@@ -232,6 +232,11 @@
 
             .bento-item.XS {
                 display: none;
+            }
+
+            .bento-item.M.bento-button {
+                grid-column: 2 / 4 !important;
+
             }
 
             /* Ensure rows adjust dynamically */

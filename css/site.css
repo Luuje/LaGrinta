@@ -46641,6 +46641,7 @@ body:not(.sqs-edit-mode) .blog-item-preview-chip-container.visitor-hidden {
 
 body {
     background-color: white;
+    padding: 1rem;
 }
 
 
@@ -46764,4 +46765,29 @@ p {
 
 .text-block {
     width: 350px;
+}
+
+
+@media (max-width: 768px) {
+
+
+    #insufflez {
+        width: 100%;
+    }
+
+    #equation {
+        width: 100%;
+        padding: 100px;
+        margin: 100px;
+    }
+
+    #equation-row {
+        width: auto;
+    }
+
+    #equation h2 {
+        display: flex;
+    }
+
+
 }
