@@ -46711,6 +46711,7 @@ p {
     font-weight: 900;
     font-style: italic;
     margin: 1rem 2rem;
+    text-align: center;
 }
 
 .bloc-rouge h2 {
@@ -46775,6 +46776,19 @@ p {
 
     #insufflez {
         width: 100%;
+    }
+
+    .bloc-rouge {
+        margin: 6px 0px;
+    }
+
+    .bloc-rouge-wrapper {
+        padding: 6px 20px;
+    }
+
+    #insufflez p {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
     }
 
     #equation {
