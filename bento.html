@@ -218,19 +218,20 @@
                 padding: 0;
             }
 
-            /* Full width (spanning all 3 columns) */
             .bento-item.L {
                 grid-column: span 3 !important;
             }
 
-            /* Half width (spanning 2 columns) */
             .bento-item.M {
                 grid-column: span 2 !important;
             }
 
-            /* One-third width (spanning 1 column) */
             .bento-item.S {
                 grid-column: span 1 !important;
+            }
+
+            .bento-item.XS {
+                display: none;
             }
 
             /* Ensure rows adjust dynamically */
@@ -307,12 +308,12 @@
                 </div>
             </div>
 
-            <div class="bento-item bento-item-image" style="grid-column: 1 / 2 ; grid-row: span 2;" ;>
+            <div class="bento-item bento-item-image S" style="grid-column: 1 / 2 ; grid-row: span 2;" ;>
                 <img src="images/jump.jpg" style="">
             </div>
 
 
-            <div class="bento-item bento-item-link" style="grid-column: 2 / 4;">
+            <div class="bento-item bento-item-link M" style="grid-column: 2 / 4;">
                 <div class="col">
                     <span style="font-size: 2rem; line-height: 2rem;">Rejoignez</span>
                     <span style="line-height: 1.5rem; margin-bottom: 0.5rem;"> le mouvement avec</span>
@@ -320,17 +321,17 @@
                 </div>
             </div>
 
-            <div class="bento-item bento-item-image bento-item-link" style="grid-column: 7  / 9; ">
-                <img src="images/methode-target.png" style="height: 40px; ">
+            <div class="bento-item bento-item-image bento-item-link M" style="grid-column: 7  / 9; ">
+                <img src="images/methode-target.png" style="height: 50px; ">
             </div>
 
 
-            <div class="bento-item bento-item-image" style="grid-column: 9  / 10; ">
+            <div class="bento-item bento-item-image S" style="grid-column: 9  / 10; ">
                 <img src="images/quad.jpg">
             </div>
 
 
-            <div class="bento-item  bento-item-link" style="grid-column: 2 / 4;">
+            <div class="bento-item  bento-item-link S" style="grid-column: 2 / 4;">
                 <div class="col">
                     <span>Nous sommes</span>
                     <span style="font-size: 1.8rem;  margin-bottom: 0.5rem;">certifiés</span>
@@ -338,7 +339,7 @@
                 </div>
             </div>
 
-            <div class="bento-item bento-item-figure bento-item-link" style="grid-column: 4 / 7; min-height: 200px;">
+            <div class="bento-item bento-item-figure bento-item-link M" style="grid-column: 4 / 7; min-height: 200px;">
                 <div class="row" style="width: 100%; height: 70%; position: absolute; top: 10%; z-index: 2;">
                     <span class="figure-number red"
                         style=" font-size: 2.6rem; line-height: 2.7rem; margin-right: 0.7rem;">2000+</span>
@@ -352,17 +353,15 @@
                     style="width: 100%; position: absolute; bottom: 0px; opacity: 0.9; object-fit: cover; object-position: bottom;">
             </div>
 
-            <div class="bento-item bento-item-image" style="grid-column: 7  / 8;">
+            <div class="bento-item bento-item-image XS" style="grid-column: 7  / 8;">
                 <img src="images/diagram.png">
             </div>
 
-            <div class="bento-item bento-item-image" style="grid-column: 8  / 10;">
+            <div class="bento-item bento-item-image XS" style="grid-column: 8  / 10;">
                 <img src="images/generic_1.webp">
             </div>
 
-
-
-            <div class="bento-item bento-item-transparent bento-button"
+            <div class="bento-item bento-item-transparent bento-button M"
                 style="grid-column: 8 / 10; margin-top: 2rem; width: 100%;">
 
                 <div class="sqs-block-button-container sqs-block-button-container--center" data-animation-role="button"
