@@ -46643,7 +46643,7 @@ body {
 
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Calibri, sans-serif;
     font-weight: 800;
     color: black;
 }
@@ -46784,7 +46784,7 @@ p {
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
 
@@ -46794,6 +46794,10 @@ p {
 
     .bloc-rouge {
         margin: 6px 0px;
+    }
+
+    .bloc-rouge p {
+        font-size: 1rem;
     }
 
     .bloc-rouge-wrapper {
@@ -46851,6 +46855,13 @@ p {
         .sqs-block-form-lightbox .sqs-button-element--secondary,
         #siteWrapper .sqs-button-element--primary {
             font-size: 1.3rem;
+        }
+    }
+
+    @media screen and (max-width: 767px) and (orientation: portrait) {
+        h4 {
+            font-size: 7rem;
+            vertical-align: bottom;
         }
     }
 
