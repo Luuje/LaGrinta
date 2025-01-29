@@ -46766,11 +46766,25 @@ p {
     margin-right: 30px;
 }
 
+#siteWrapper .sqs-button-element--secondary,
+.sqs-block-form-lightbox .sqs-button-element--secondary,
+#siteWrapper .sqs-button-element--primary {
+    font-style: italic;
+}
+
 
 @media (max-width: 768px) {
 
     section {
         margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
     }
 
 
@@ -46787,7 +46801,6 @@ p {
     }
 
     #insufflez p {
-        font-size: 0.8rem;
         margin-bottom: 20px;
     }
 
@@ -46819,7 +46832,7 @@ p {
     #nosvaleurs img {
         margin-top: 20px;
         width: 100%;
-        height: 600px;
+        height: auto;
         object-fit: cover;
     }
 
@@ -46828,5 +46841,17 @@ p {
         margin-right: 6px;
     }
 
+    a.sqs-button-element--secondary {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 767px) and (orientation: portrait) {
+
+        #siteWrapper .sqs-button-element--secondary,
+        .sqs-block-form-lightbox .sqs-button-element--secondary,
+        #siteWrapper .sqs-button-element--primary {
+            font-size: 1.3rem;
+        }
+    }
 
 }
