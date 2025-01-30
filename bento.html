@@ -16,7 +16,7 @@
             --dark-red: rgb(229, 130, 130);
             --light-green: rgb(222, 253, 208);
             --black: #272727;
-            --light-gray: #f1f1f1;
+            --light-gray: #e4e4e4;
             --dark-gray: #8e8e8e;
         }
 
@@ -43,7 +43,7 @@
         .bento-grid-section {
             /* To position the pseudo-element */
             position: relative;
-            width: calc(100% - 2rem);
+            width: 100%;
 
             display: flex;
             align-items: center;
@@ -201,6 +201,8 @@
         @media (max-width: 768px) {
             .bento-grid-section {
                 padding: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
             }
 
             .bento-grid {
@@ -246,7 +248,7 @@
             }
 
             .bento-cover {
-                grid-row: span 4 !important;
+                grid-row: span 3 !important;
             }
         }
     </style>
@@ -308,7 +310,7 @@
                         <span style="font-size: 1.7rem; line-height: 1.7rem;">Prépa.</span>
                         <span class="red" style="font-size: 1.4rem; line-height: 1.4rem;">mentale</span>
                     </div>
-                    <p>x</p>
+                    <p style="font-size: 2rem;">x</p>
                     <div class="col">
                         <span style="font-size: 1.8rem; line-height: 1.7rem;">Analyse</span>
                         <span class="red" style="font-size: 1rem; line-height: 1.4rem;">comportementale</span>

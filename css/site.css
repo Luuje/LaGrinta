@@ -46639,6 +46639,7 @@ body:not(.sqs-edit-mode) .blog-item-preview-chip-container.visitor-hidden {
 body {
     background-color: white;
     padding: 1rem;
+    width: calc(100 - 2rem);
 }
 
 
@@ -46646,6 +46647,10 @@ body {
     font-family: 'Poppins', Calibri, sans-serif;
     font-weight: 800;
     color: black;
+}
+
+#sections {
+    overflow-x: hidden;
 }
 
 .row {
