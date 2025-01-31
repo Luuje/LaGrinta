@@ -16,7 +16,6 @@
             --dark-red: rgb(229, 130, 130);
             --light-green: rgb(222, 253, 208);
             --black: #272727;
-            --light-gray: rgb(255, 255, 255);
             --dark-gray: #8e8e8e;
         }
 
@@ -40,8 +39,16 @@
             color: var(--black);
         }
 
+        .bento-grid .col {
+            gap: 1rem;
+            height: 100%;
+            align-items: start;
+            justify-content: space-between;
+        }
+
         .bento-grid-section {
             /* To position the pseudo-element */
+            max-width: 1100px;
             position: relative;
             width: 100%;
             background-color: transparent;
@@ -51,7 +58,7 @@
             justify-content: center;
             align-self: center;
             padding: 0px;
-            margin: 5rem auto;
+            margin: 5rem 0;
 
             font-weight: 800;
             font-style: italic;
@@ -79,10 +86,19 @@
         }
 
         .bento-grid p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 700;
             margin: 0px;
+            text-align: left;
+            font-style: normal;
 
+        }
+
+        .bento-grid h2 {
+            margin: 0px;
+            text-align: left;
+            font-style: normal;
+            font-weight: 700;
         }
 
         .bento-item {
@@ -92,10 +108,10 @@
             align-self: center;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            text-align: left;
             box-sizing: border-box;
             height: 100%;
-            background-color: var(--light-gray);
+            background-color: white;
             padding: 2rem;
             overflow: hidden;
 
@@ -142,27 +158,44 @@
             justify-content: center;
             text-align: center;
             gap: 0px;
-            padding: 14px 0px;
+            padding: 1rem 2rem;
             color: white;
             z-index: 0;
             background-color: var(--primary-red);
+            background-color: rgb(254, 56, 62);
+        }
+
+        .bento-item-title p {
+            color: white;
+            z-index: 1;
         }
 
         .bento-item-title h3 {
+            width: 100%;
             z-index: 1;
             color: white;
+            font-size: 2rem;
+            text-align: center;
+            /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
         }
 
         .bento-item-title img {
             position: absolute;
             z-index: 1;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
             width: 100%;
             height: 100%;
             object-fit: cover;
             mix-blend-mode: multiply;
-            filter: grayscale(50%) contrast(0.8);
+            filter: grayscale(100%) saturate(20) contrast(1.2) brightness(1.3) blur(0.5px);
         }
 
+        .bento-item-title .xblur {
+            filter: grayscale(100%) saturate(20) contrast(1.2) brightness(1.3) blur(0.8px);
+        }
 
         .bento-item-title::before {
             content: "";
@@ -171,7 +204,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: black;
+            background-color: rgb(0, 0, 0);
             mix-blend-mode: screen;
             z-index: 3;
         }
@@ -229,9 +262,11 @@
             padding: 0px;
         }
 
-        #methode-target {
-            height: 50px;
+
+        .bento-item-cover img {
+            filter: contrast(1.1) saturate(1);
         }
+
 
         @media (max-width: 768px) {
             .bento-grid-section {
@@ -309,99 +344,77 @@
 
         <div class="bento-grid">
 
-            <div class="bento-item bento-item-title M" style="grid-column: 1 / 3; grid-row: span 2;">
-                <img src="images/generic_2.jpg" />
-                <h3 class="" style="">REBRANCHEZ VOS ÉQUIPES SUR 220V</h3>
-            </div>
 
-            <div class="bento-item bento-item-image XS" style="grid-column: 3 / 4; grid-row: span 2;">
-                <img src="images/generic_2.jpg">
-            </div>
-
-            <div class="bento-cover bento-item bento-item-image S" style="grid-column: 4 / 7; grid-row: span 3;">
+            <div class="bento-item-cover  bento-item bento-item-image S" style="grid-column: 1 / 3; grid-row: span 3;">
                 <img src="images/img_9695(2).jpg">
             </div>
 
-            <div class="bento-item bento-item-link L" style="grid-column: 7 / 10; grid-row: span 1;">
-                <img src="images/generic_0_original.jpg"
-                    style="position: absolute; width: 100%; object-fit: cover; z-index: 0; opacity: 0.3;" />
-                <div class="col" style="z-index: 1;">
-                    <span class="red"
-                        style=" font-size: 3rem; line-height: 3.1rem; text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.747);">>DU
-                        MENTAL</span>
-                    <span class="black"
-                        style=" font-size: 1.6rem; line-height: 1.8rem;  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.76);">AU
-                        COMPORTEMENTAL< </span>
-                </div>
-
+            <div class="bento-item bento-item-title M" style="grid-column: 3 / 6; grid-row: span 1;">
+                <img src="images/generic8.jpg" />
+                <h3 class="" style="text-align: left;">Du mental au comportemental</h3>
             </div>
 
+            <div class="bento-item bento-item-figure bento-item-link M" style="grid-column: 6 / 8; ">
+                <div class="col" style="align-items: start; justify-content: space-between; height: 100%;">
+                    <h2 class="figure-number red">2000+</h2>
+                    <p class="figure-text" style="">Personnes accompagnées</p>
 
-            <div class="bento-item col bento-item-link M" style="grid-column: 7  / 10;">
-                <div class="row" style="gap: 2rem; align-items: center;">
-                    <div class="col">
-                        <span style="font-size: 1.7rem; line-height: 1.7rem;">Prépa.</span>
-                        <span class="red" style="font-size: 1.4rem; line-height: 1.4rem;">mentale</span>
-                    </div>
-                    <p style="font-size: 2rem;">x</p>
-                    <div class="col">
-                        <span style="font-size: 1.8rem; line-height: 1.7rem;">Analyse</span>
-                        <span class="red" style="font-size: 1rem; line-height: 1.4rem;">comportementale</span>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="bento-item bento-item-image S" style="grid-column: 1 / 2 ; grid-row: span 2;" ;>
-                <img src="images/jump.jpg" style="">
-            </div>
-
-
-            <div class="bento-item bento-item-link M" style="grid-column: 2 / 4;">
-                <div class="col">
-                    <span style="font-size: 2rem; line-height: 2rem;">Rejoignez</span>
-                    <span style="line-height: 1.5rem; margin-bottom: 0.5rem;"> le mouvement avec</span>
-                    <img src="images/lagrintacademie.png" style="width: 100%;">
-                </div>
-            </div>
-
-            <div class="bento-item bento-item-image bento-item-link M" style="grid-column: 7  / 9; ">
-                <img id="methode-target" src="images/methode-target.png" style="">
-            </div>
-
-
-            <div class="bento-item bento-item-image S" style="grid-column: 9  / 10; ">
-                <img src="images/quad.jpg">
-            </div>
-
-
-            <div class="bento-item  bento-item-link S" style="grid-column: 2 / 4;">
-                <div class="col">
-                    <span>Nous sommes</span>
-                    <span style="font-size: 1.8rem;  margin-bottom: 0.5rem;">certifiés</span>
-                    <img src="images/qualiopi.png" style="width: 100%;">
-                </div>
-            </div>
-
-            <div class="bento-item bento-item-figure bento-item-link M" style="grid-column: 4 / 7; min-height: 200px;">
-                <div class="row" style="">
-                    <div class="col" style="align-items: start;">
-                        <p class="figure-number red">2000+</p>
-                        <p class="figure-text" style="">Personnes accompagnées</p>
-
-                    </div>
                 </div>
                 <!-- <img src="images/para.png"
                     style="width: 70%; position: absolute; bottom: 0px; opacity: 0.9; object-fit: cover; object-position: bottom;"> -->
             </div>
 
-            <div class="bento-item bento-item-image XS" style="grid-column: 7  / 8;">
-                <img src="images/diagram.png">
+            <div class="bento-item bento-item-title M " style="grid-column: 8 / 10; grid-row: span 2;">
+                <img class="" src="images/jump.jpg" />
+                <div class="col">
+                    <h3 class="" style="">Rebranchez vos équipes</h3>
+                    <h3 class="" style="">SUR 220V</h3>
+                </div>
             </div>
 
-            <div class="bento-item bento-item-image XS" style="grid-column: 8  / 10;">
-                <img src="images/generic_1.webp">
+            <div class="bento-item  bento-item-link S" style="grid-column: 3 / 5;">
+                <div class="col">
+                    <p>Nous sommes certifiés</p>
+                    <img src="images/qualiopi.png" style="width: 100%;">
+                </div>
             </div>
+
+            <div class="bento-item bento-item-link M" style="grid-column: 5 / 8;">
+                <div class="col" style="justify-content: space-around;">
+                    <p>Rejoignez le mouvement avec</p>
+                    <div class="col" style="flex: 1; justify-content: center;">
+                        <img src="images/lagrintacademie.png" style="width: 100%; ">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="bento-item col bento-item-title M" style="grid-column: 3  / 7;">
+                <img class="xblur" src="images/generic_2.jpg" />
+                <div class="row" style="gap: 2rem; align-items: center;">
+                    <h3>Prépa. mentale</h3>
+                    <p style="font-size: 2rem; font-weight: 600;">x</p>
+                    <h3>Analyse comporte- <br>mentale</h3>
+
+                </div>
+            </div>
+
+            <div class="bento-item bento-item-link M" style="grid-column: 7  / 10; ">
+                <img id="methode-target" src="images/methodes.png" style="width: 100%;">
+            </div>
+
+            <!-- <div class="bento-item bento-item-image S" style="grid-column: 9  / 10; ">
+                <img src="images/quad.jpg">
+            </div> -->
+
+            <!-- <div class="bento-item bento-item-image XS" style="grid-column: 7  / 8;">
+                <img src="images/diagram.png">
+            </div> -->
+
+            <!-- <div class="bento-item bento-item-image XS" style="grid-column: 8  / 10;">
+                <img src="images/generic_0_original.jpg">
+            </div> -->
 
             <div class="bento-item bento-item-transparent bento-button M"
                 style="grid-column: 8 / 10; margin-top: 2rem; width: 100%;">

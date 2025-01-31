@@ -20912,10 +20912,7 @@ a {
     --previous-section-divider-offset: 0px;
 }
 
-body {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
+body {}
 
 @supports (--test-custom-property: true) {
     body {
@@ -46652,11 +46649,17 @@ body:not(.sqs-edit-mode) .blog-item-preview-chip-container.visitor-hidden {
 /* *************************************** */
 /* *************************************** */
 
+:root {
+    --light-gray: rgb(208, 208, 208);
+}
 
-
+body:not(.header--menu-open) .header .header-announcement-bar-wrapper [data-header-style="solid"].header-background-solid {
+    background-color: var(--solidHeaderBackgroundColor);
+    background-color: var(--light-gray);
+}
 
 body {
-    background-color: rgb(224, 224, 224);
+    background-color: var(--light-gray);
     padding: 1rem;
     width: calc(100 - 2rem);
 }
@@ -46666,14 +46669,6 @@ body {
     font-family: 'Poppins', Calibri, sans-serif;
     font-weight: 800;
     color: black;
-}
-
-#sections {
-    overflow-x: hidden;
-}
-
-section {
-    background-color: white;
 }
 
 .row {
@@ -46696,12 +46691,32 @@ h4 {
     font-style: italic;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 p {
     font-weight: 600;
 }
 
+#sections {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    max-width: calc(1100px - 20rem);
+    background-color: white;
+    border-radius: 10px;
+    padding: 6rem 10rem;
+    margin: 3rem 0rem;
+}
+
 #accueil {
     background-color: transparent;
+    padding: 0px;
+    max-width: 1100px;
 }
 
 #insufflez h2 {
@@ -46718,20 +46733,21 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
 }
 
 #insufflez p {
     margin-bottom: 30px;
+    max-width: 600px;
 }
 
 .bloc-rouge {
     margin: 14px 0px;
+    max-width: 600px;
 }
 
 .bloc-rouge-wrapper {
     background-color: var(--primary-red);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 6px 50px;
 }
 
@@ -46759,21 +46775,21 @@ p {
 
 #equation {
     background-color: var(--primary-red);
+    background-color: transparent;
     width: 200%;
-    padding: 100px;
-    margin: 60px;
+    padding: 2rem;
 }
 
 #equation em {
-    color: white;
+    color: var(--primary-red);
 }
 
 #equation em.equation-item {
-    background-color: white;
-    color: var(--primary-red);
+    background-color: var(--primary-red);
+    color: white;
     padding: 6px 20px;
     margin: 24px;
-    border-radius: 3px;
+    border-radius: 10px;
     line-height: 80px;
 }
 
@@ -46802,6 +46818,7 @@ p {
 .sqs-block-form-lightbox .sqs-button-element--secondary,
 #siteWrapper .sqs-button-element--primary {
     font-style: italic;
+    border-radius: 10px;
 }
 
 
