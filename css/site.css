@@ -46709,7 +46709,7 @@ section {
     max-width: calc(1100px - 20rem);
     background-color: white;
     border-radius: 10px;
-    padding: 6rem 10rem;
+    padding: 8rem 10rem;
     margin: 3rem 0rem;
 }
 
@@ -46814,11 +46814,59 @@ section {
     margin-right: 30px;
 }
 
+#siteWrapper .sqs-block-button-container,
+header .sqs-block-button-container {
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.285);
+    border-radius: 10px;
+    overflow: visible;
+    width: fit-content;
+}
+
 #siteWrapper .sqs-button-element--secondary,
+header .sqs-button-element--secondary,
 .sqs-block-form-lightbox .sqs-button-element--secondary,
-#siteWrapper .sqs-button-element--primary {
+#siteWrapper .sqs-button-element--primary,
+header .sqs-button-element--primary {
     font-style: italic;
     border-radius: 10px;
+    overflow: visible;
+
+}
+
+#siteWrapper .sqs-block-button-container:hover,
+header .sqs-block-button-container:hover {
+    transform: scale(1.05);
+}
+
+
+.partenaire {
+    flex: 1;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.partenaire img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.partenaire p.partenaire-nom {
+    margin: 2rem 0rem 1rem 0rem;
+    font-weight: 800;
+}
+
+.partenaire p {
+    margin: 0px;
+}
+
+footer {
+    background-color: var(--primary-red);
+    color: white;
+    padding: 3rem;
 }
 
 
