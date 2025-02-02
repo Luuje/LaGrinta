@@ -273,10 +273,9 @@
         }
 
 
-        @media (max-width: 800px) {
+        @media (max-width: 900px) {
             .bento-grid-section {
-                padding: 1rem;
-                width: calc(100% - 2rem);
+                width: 100%;
                 margin: 0;
             }
 
@@ -337,7 +336,7 @@
 <body>
 
 
-    <section class="bento-grid-section">
+    <div class="bento-grid-section">
 
         <!-- Background SVG -->
         <!-- <svg class="background-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500"
@@ -411,7 +410,7 @@
             </div>
 
             <div class="bento-item bento-item-link M" style="order: 8; grid-column: 7  / 10; ">
-                <div class="row">
+                <div class="row" style="width: 100%;">
                     <img style="flex: 3;" src="images/methode-target.png" style="width: 100%;">
                     <img style="flex: 1;" src="images/disc.png" style="width: 100%;">
                 </div>
@@ -445,7 +444,7 @@
 
 
         </div>
-    </section>
+    </div>
 
 </body>
 
