@@ -30726,8 +30726,8 @@ body:not(.header--menu-open) [data-header-style="gradient"].header .language-pic
     box-sizing: border-box;
     padding-top: 0.9vw;
     padding-bottom: 0.9vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     pointer-events: auto;
 }
 
@@ -46689,7 +46689,8 @@ h4 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    text-align: center;
 }
 
 p {
@@ -46717,11 +46718,7 @@ section {
     background-color: transparent;
     padding: 0px;
     max-width: 1100px;
-}
-
-#insufflez h2 {
-    font-weight: 800;
-    font-style: italic;
+    margin-top: 7rem;
 }
 
 #page {
@@ -46781,6 +46778,7 @@ section {
 
 #equation em {
     color: white;
+    font-size: 2.5rem;
 }
 
 #equation em.equation-item {
@@ -46790,6 +46788,7 @@ section {
     margin: 24px;
     border-radius: 10px;
     line-height: 80px;
+    font-size: 2.5rem;
 }
 
 #nosvaleurs * {}
@@ -46869,10 +46868,17 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     section {
-        margin-bottom: 20px;
+        width: calc(100% - 2rem) !important;
+        padding: 0 1rem !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    #accueil {
+        margin-top: calc(12vw + 50px);
     }
 
     h2 {
@@ -46880,12 +46886,7 @@ footer {
     }
 
     p {
-        font-size: 1.5rem;
-    }
-
-
-    #insufflez {
-        width: 100%;
+        font-size: 1.2rem;
     }
 
     .bloc-rouge {
@@ -46902,12 +46903,6 @@ footer {
 
     #insufflez p {
         margin-bottom: 20px;
-    }
-
-    #equation {
-        width: 100%;
-        padding: 20px;
-        margin: 60px;
     }
 
     #equation-row {
