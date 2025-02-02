@@ -15,6 +15,7 @@
             --light-red2: rgb(255, 169, 186);
             --dark-red: rgb(229, 130, 130);
             --light-green: rgb(222, 253, 208);
+            --light-gray: rgb(215, 215, 215);
             --black: #272727;
             --dark-gray: #8e8e8e;
         }
@@ -58,7 +59,7 @@
             justify-content: center;
             align-self: center;
             padding: 0px;
-            margin: 5rem 0;
+            margin: 5rem 0 0 0;
 
             font-weight: 800;
             font-style: italic;
@@ -111,7 +112,7 @@
             text-align: left;
             box-sizing: border-box;
             height: 100%;
-            background-color: white;
+            background-color: var(--light-gray);
             padding: 2rem;
             overflow: hidden;
 
@@ -225,6 +226,7 @@
         .bento-item-figure .figure-number {
             font-size: 3rem;
             display: block;
+            font-style: italic;
         }
 
         .bento-item-figure .figure-text {}
