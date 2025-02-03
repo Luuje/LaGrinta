@@ -46688,6 +46688,10 @@ h4 {
     font-style: italic;
 }
 
+.white {
+    color: white;
+}
+
 h2 {
     font-size: 3.5rem;
     text-align: center;
@@ -46882,10 +46886,12 @@ footer p {
         padding: 0 1rem !important;
         margin-right: 0 !important;
         margin-left: 0 !important;
+        margin-bottom: 5rem;
     }
 
     #accueil {
         margin-top: calc(12vw + 50px);
+        margin-bottom: 5rem;
     }
 
     h2 {
@@ -46912,6 +46918,11 @@ footer p {
         margin-bottom: 20px;
     }
 
+    #equation {
+        padding: 6rem 0 !important;
+        width: 100% !important;
+    }
+
     #equation-row {
         width: auto;
     }
@@ -46935,6 +46946,7 @@ footer p {
         margin-top: 20px;
         width: 100%;
         height: auto;
+        max-height: 60vh;
         object-fit: cover;
     }
 
