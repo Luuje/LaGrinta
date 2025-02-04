@@ -46664,6 +46664,7 @@ body {
 
 * {
     font-family: 'Poppins', Calibri, sans-serif;
+    font-style: normal;
     font-weight: 800;
     color: black;
 }
@@ -46678,6 +46679,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.red-background {
+    background-color: var(--primary-red);
+    color: white;
 }
 
 h1,
@@ -46701,6 +46707,12 @@ p {
     font-weight: 600;
 }
 
+.image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 #sections {
     width: 100%;
     overflow-x: hidden;
@@ -46712,10 +46724,17 @@ section {
     width: calc(100% - 20rem);
     padding: 4rem 10rem;
     margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-content {
+    width: 100%;
     max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #accueil {
