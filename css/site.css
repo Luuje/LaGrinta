@@ -46698,6 +46698,14 @@ h4 {
     color: white;
 }
 
+.red {
+    color: var(--primary-red);
+}
+
+.italic {
+    font-style: italic;
+}
+
 h2 {
     font-size: 3.5rem;
     text-align: center;
@@ -46897,6 +46905,7 @@ footer p {
     font-size: 1.1rem;
 }
 
+.tabs {}
 
 @media (max-width: 900px) {
 
