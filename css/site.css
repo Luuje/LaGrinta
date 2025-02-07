@@ -14105,7 +14105,7 @@ h1,
 h2,
 h3,
 h4 {
-    margin: 2rem 0;
+    margin: 2rem 0 1rem 0;
 }
 
 .sqsrte-large,
@@ -46713,6 +46713,7 @@ h2 {
 
 p {
     font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .image {
@@ -46825,10 +46826,7 @@ section {
 
 #nosvaleurs * {}
 
-#nosvaleurs h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
+#nosvaleurs h2 {}
 
 #nosvaleurs .sqs-block-button-element {
     color: var(--primary-red);
@@ -46923,11 +46921,15 @@ footer p {
     }
 
     h2 {
-        font-size: 2.6rem;
+        font-size: 3rem;
+        text-align: left;
+        width: 100%;
     }
 
     p {
         font-size: 1.2rem;
+        text-align: left;
+        width: 100%;
     }
 
     .bloc-rouge {
@@ -46993,6 +46995,13 @@ footer p {
         .sqs-block-form-lightbox .sqs-button-element--secondary,
         #siteWrapper .sqs-button-element--primary {
             font-size: 1.3rem;
+            align-self: center;
+        }
+
+        .sqs-block-content .sqs-block-button {
+            align-items: center;
+            display: flex;
+            justify-content: center;
         }
     }
 
@@ -47000,6 +47009,14 @@ footer p {
         h4 {
             font-size: 7rem;
             vertical-align: bottom;
+        }
+    }
+
+
+    @media (max-width: 900px) {
+        .mobile-col {
+            flex-direction: column;
+            gap: 1rem;
         }
     }
 
