@@ -70,7 +70,7 @@
     width: 100%;
     display: grid;
     align-self: center;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: 1.5fr repeat(8, 1fr);
     gap: 1rem;
     position: relative;
 }
@@ -81,6 +81,14 @@
     margin: 0px;
     text-align: left;
     font-style: normal;
+}
+
+.bento-grid p.italic {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0px;
+    text-align: left;
+    font-style: italic;
 
 }
 
@@ -148,7 +156,7 @@
     justify-content: center;
     text-align: center;
     gap: 0px;
-    padding: 1rem 2rem;
+    padding: 2rem;
     color: white;
     z-index: 0;
     background-color: var(--primary-red);
@@ -164,7 +172,8 @@
     width: 100%;
     z-index: 1;
     color: white;
-    font-size: calc(1rem + 2vmin);
+    font-size: calc(1.3rem + 1vmin);
+    margin: 0;
     text-align: center;
     /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
 }
@@ -213,7 +222,7 @@
 .bento-item-figure p {}
 
 .bento-item-figure .figure-number {
-    font-size: 3rem;
+    font-size: calc(2rem + 1vmin);
     display: block;
     font-style: italic;
 }
@@ -271,7 +280,6 @@
 
     .bento-grid {
         grid-template-columns: 1fr 1fr !important;
-        /* Prevents unexpected extra columns */
         padding: 0;
     }
 
@@ -308,24 +316,48 @@
 
     #methode-target {}
 
-    .bento-item-cover {
-        grid-row: span 3 !important;
-    }
 
     #dumental {
-        order: 4 !important;
+        order: 5 !important;
     }
 
     #rebranchez {
         order: 2 !important;
+        grid-row: span 4 !important;
+        min-height: 300px;
     }
 
-    #footer-row {
-        flex-direction: column;
+    #cover {
+        order: 3 !important;
+        grid-row: span 6 !important;
     }
 
-    #footer-methodes {
-        flex-direction: column;
-        align-items: center;
+    #accompagnees {
+        order: 4 !important;
+        grid-row: span 2 !important;
+    }
+
+    #methode-target {
+        order: 6 !important;
+        grid-row: span 2 !important;
+    }
+
+    #grintacademie {
+        order: 7 !important;
+        grid-row: span 2 !important;
+    }
+
+    #methode-disc {
+        order: 9 !important;
+        grid-row: span 2 !important;
+    }
+
+    #qualiopi {
+        order: 10 !important;
+        grid-row: span 2 !important;
+    }
+
+    #bento-button {
+        order: 11 !important;
     }
 }
