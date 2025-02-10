@@ -46669,16 +46669,26 @@ body {
     color: black;
 }
 
+main {
+    margin-top: 7rem;
+}
+
 .row {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 1rem;
 }
 
 .col {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+}
+
+.baseline {
+    align-items: baseline;
 }
 
 .red-background {
@@ -46749,7 +46759,6 @@ section {
 #accueil {
     background-color: transparent;
     padding: 0;
-    margin: 7rem 1rem 0rem 1rem;
     width: calc(100% - 2rem);
     max-width: 1100px;
 }
@@ -46786,10 +46795,12 @@ section {
 }
 
 .bloc-rouge h4 {
-    font-weight: 900;
     font-style: italic;
     margin: 1rem 2rem;
     text-align: center;
+    font-size: calc(6rem + 3vw);
+    align-self: center;
+
 }
 
 .bloc-rouge h2 {
@@ -46897,6 +46908,7 @@ footer {
     background-color: var(--black);
     color: white;
     padding: 5rem 5rem;
+    margin-top: 3rem;
 }
 
 footer p {
@@ -46908,6 +46920,10 @@ footer p {
 
 @media (max-width: 900px) {
 
+    main {
+        margin-top: calc(12vw + 60px);
+    }
+
     section {
         width: calc(100% - 2rem) !important;
         padding: 0 1rem !important;
@@ -46916,10 +46932,6 @@ footer p {
         margin-bottom: 5rem;
     }
 
-    #accueil {
-        margin-top: calc(12vw + 50px);
-        margin-bottom: 5rem;
-    }
 
     h2 {
         font-size: 3rem;
@@ -47020,9 +47032,18 @@ footer p {
             gap: 1rem;
         }
 
+        .mobile-col-reverse {
+            flex-direction: column-reverse;
+            gap: 1rem;
+        }
+
         .mobile-row {
             flex-direction: row;
             gap: 1rem;
+        }
+
+        .mobile-center {
+            align-items: center;
         }
 
         #footer-row {
