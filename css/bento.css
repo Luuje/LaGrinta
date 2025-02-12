@@ -6,7 +6,7 @@
     --dark-red: rgb(229, 130, 130);
     --light-green: rgb(222, 253, 208);
     --light-gray: rgb(215, 215, 215);
-    --black: #272727;
+    --black: #1d1d1d;
     --dark-gray: #8e8e8e;
 }
 
@@ -318,7 +318,7 @@
 
 
     #dumental {
-        order: 5 !important;
+        order: 3 !important;
     }
 
     #rebranchez {
@@ -328,22 +328,22 @@
     }
 
     #cover {
-        order: 3 !important;
+        order: 1 !important;
         grid-row: span 6 !important;
     }
 
     #accompagnees {
-        order: 4 !important;
+        order: 3 !important;
         grid-row: span 2 !important;
     }
 
     #methode-target {
-        order: 6 !important;
+        order: 5 !important;
         grid-row: span 2 !important;
     }
 
     #grintacademie {
-        order: 7 !important;
+        order: 6 !important;
         grid-row: span 2 !important;
     }
 
@@ -353,11 +353,15 @@
     }
 
     #qualiopi {
-        order: 10 !important;
+        order: 11 !important;
         grid-row: span 2 !important;
     }
 
     #bento-button {
-        order: 11 !important;
+        order: 12 !important;
+    }
+
+    #prepa {
+        order: 4 !important;
     }
 }

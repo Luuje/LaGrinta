@@ -19,7 +19,7 @@
     --light-red2: rgb(255, 169, 186);
     --dark-red: rgb(229, 130, 130);
     --light-green: rgb(222, 253, 208);
-    --black: #272727;
+    --black: #1d1d1d;
     --light-gray: #f0f0f0;
     --dark-gray: #8e8e8e;
 }
@@ -46704,6 +46704,19 @@ h4 {
     font-style: italic;
 }
 
+h1 {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
 .white {
     color: white;
 }
@@ -46716,20 +46729,24 @@ h4 {
     font-style: italic;
 }
 
-h2 {
-    font-size: 3.5rem;
-    text-align: center;
-}
 
 p {
     font-weight: 600;
     font-size: 1.1rem;
 }
 
+li p {
+    margin: 0.2rem 0;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
 .image {
     width: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #sections {
@@ -46756,6 +46773,20 @@ section {
     align-items: center;
 }
 
+.section-divider {
+    margin: 3rem 0;
+}
+
+.section-divider div {
+    background-color: var(--primary-red);
+    width: 100%;
+    max-width: 1100px;
+    height: 3px;
+    z-index: 10;
+    border-radius: 100%;
+
+}
+
 #accueil {
     background-color: transparent;
     padding: 0;
@@ -46772,6 +46803,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#insufflez h4 {
+    font-size: 10rem;
 }
 
 #insufflez p {
@@ -46903,6 +46938,20 @@ header .sqs-block-button-container:hover {
     font-size: 0.7rem;
 }
 
+.title-block {
+    background-color: var(--primary-red);
+    border-radius: 10px;
+    padding: 2rem 4rem;
+}
+
+.title-block h4 {
+    margin: 0;
+}
+
+.title-block * {
+    color: white;
+}
+
 footer {
     background-color: var(--primary-red);
     background-color: var(--black);
@@ -46917,6 +46966,16 @@ footer p {
 }
 
 .tabs {}
+
+.w50 {
+    width: 50%;
+}
+
+.header-nav-item header-nav-item--collection header-nav-item--active {}
+
+.header-nav-item:hover a {
+    transform: scale(1.05);
+}
 
 @media (max-width: 900px) {
 
@@ -46953,8 +47012,16 @@ footer p {
         font-size: 1rem;
     }
 
+    .bloc-rouge p {
+        font-size: 1rem;
+    }
+
     .bloc-rouge-wrapper {
         padding: 6px 20px;
+    }
+
+    .bloc-rouge h2 {
+        font-size: 2rem;
     }
 
     #insufflez p {
@@ -47018,12 +47085,6 @@ footer p {
         }
     }
 
-    @media screen and (max-width: 767px) and (orientation: portrait) {
-        h4 {
-            font-size: 7rem;
-            vertical-align: bottom;
-        }
-    }
 
 
     @media (max-width: 900px) {
@@ -47053,6 +47114,29 @@ footer p {
         #footer-methodes {
             flex-direction: column;
             align-items: center;
+        }
+
+        .mobile-w100 {
+            width: 100%;
+        }
+
+
+        .partenaire p.partenaire-nom {
+            margin: 1rem 0rem 0.5rem 0rem;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+
+        .partenaire p {
+            margin: 0px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+
+
+        .title-block {
+            padding: 2rem;
         }
     }
 
