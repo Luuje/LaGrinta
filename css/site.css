@@ -46704,6 +46704,7 @@ h4 {
     font-weight: 800;
     font-style: italic;
     hyphens: auto;
+    word-break: normal;
 }
 
 h1 {
@@ -46963,7 +46964,6 @@ footer {
     background-color: var(--black);
     color: white;
     padding: 5rem 5rem;
-    margin-top: 3rem;
     z-index: 20;
 }
 
@@ -46980,6 +46980,30 @@ footer p {
 
 .w100 {
     width: 100%;
+}
+
+#contact-main {
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contact {
+    margin-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+#contact * {
+    color: var(--black);
+}
+
+#contact .blur-block {
+    background-color: rgba(255, 255, 255, 0.375);
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.185));
+    backdrop-filter: blur(30px);
+    padding: 4rem 8rem;
+    border-radius: 10px;
 }
 
 .header-nav-item header-nav-item--collection header-nav-item--active {}
@@ -47134,6 +47158,15 @@ footer p {
 
     .title-block {
         padding: 2rem;
+    }
+
+    #contact {
+        margin-top: calc(12vw + 60px);
+    }
+
+    #contact .blur-block {
+        padding: 2rem 1.5rem;
+        width: calc(100% - 3rem);
     }
 }
 
