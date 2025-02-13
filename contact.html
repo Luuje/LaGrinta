@@ -216,7 +216,12 @@
             --solidHeaderBackgroundColor: hsla(var(--white-hsl), 1);
             --solidHeaderNavigationColor: hsla(var(--black-hsl), 1);
             ">
-      <div class="sqs-announcement-bar-dropzone"></div>
+      <div class="sqs-announcement-bar-dropzone">
+        <div class="col"
+          style="width: 100%;  background-color: rgb(255, 0, 53); z-index: 110; color: white; font-size: 0.8rem; padding: 0.2rem; z-index: 300;">
+          SITE EN CONSTRUCTION
+        </div>
+      </div>
       <div class="header-announcement-bar-wrapper">
         <a href="#page" class="header-skip-link sqs-button-element--primary">
           Passer au contenu
@@ -235,7 +240,7 @@
           data-test="header-dropshadow" style=""></div>
         <div>
           <div class="header-background-solid" data-header-style="solid" data-test="header-background-solid"
-            style="opacity: calc(100 * .01)"></div>
+            style="opacity: 0"></div>
         </div>
         <div class='header-inner container--fluid
                   header-mobile-layout-logo-left-nav-right
@@ -629,11 +634,14 @@
         </div>
       </div>
     </header>
-    <main id="page" class="container" role="main">
-      <div class="col"
-        style="width: 100%;  background-color: rgb(255, 0, 53); z-index: 110; color: white; font-size: 1rem; padding: 2rem 0; margin: 20rem 0 20rem 0; z-index: 300;">
-        SITE EN CONSTRUCTION
-      </div>
+    <main id="page" class="container" role="main" style="margin-top: 0;">
+
+      <img src="images/contact.jpg"
+        style="position: absolute; width: 100%; height: 100%; object-fit: cover; filter: blur(0px); z-index: -100;">
+
+      <section>
+        <div class="content-wrapper"></div>
+      </section>
     </main>
     <footer>
       <div class="col">

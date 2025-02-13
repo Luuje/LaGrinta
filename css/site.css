@@ -46671,6 +46671,7 @@ body {
 
 main {
     margin-top: 7rem;
+    min-height: 90vh;
 }
 
 .row {
@@ -46702,6 +46703,7 @@ h3,
 h4 {
     font-weight: 800;
     font-style: italic;
+    hyphens: auto;
 }
 
 h1 {
@@ -46807,11 +46809,14 @@ section {
 
 #insufflez h4 {
     font-size: 10rem;
+    width: 10rem;
 }
 
 #insufflez p {
     margin-bottom: 30px;
     max-width: 600px;
+    width: calc(100% - 1rem);
+    padding-right: 1rem;
 }
 
 .bloc-rouge {
@@ -46823,6 +46828,7 @@ section {
     background-color: var(--primary-red);
     border-radius: 10px;
     padding: 6px 50px;
+    width: calc(100% - 100px);
 }
 
 .bloc-rouge * {
@@ -46958,6 +46964,7 @@ footer {
     color: white;
     padding: 5rem 5rem;
     margin-top: 3rem;
+    z-index: 20;
 }
 
 footer p {
@@ -46969,6 +46976,10 @@ footer p {
 
 .w50 {
     width: 50%;
+}
+
+.w100 {
+    width: 100%;
 }
 
 .header-nav-item header-nav-item--collection header-nav-item--active {}
@@ -46989,6 +47000,10 @@ footer p {
         margin-right: 0 !important;
         margin-left: 0 !important;
         margin-bottom: 5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
     }
 
 
@@ -47018,6 +47033,7 @@ footer p {
 
     .bloc-rouge-wrapper {
         padding: 6px 20px;
+        width: calc(100% - 40px);
     }
 
     .bloc-rouge h2 {
@@ -47069,75 +47085,72 @@ footer p {
         font-size: 2rem;
     }
 
-    @media screen and (max-width: 767px) and (orientation: portrait) {
+    .mobile-col {
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-        #siteWrapper .sqs-button-element--secondary,
-        .sqs-block-form-lightbox .sqs-button-element--secondary,
-        #siteWrapper .sqs-button-element--primary {
-            font-size: 1.3rem;
-            align-self: center;
-        }
+    .mobile-col-reverse {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
 
-        .sqs-block-content .sqs-block-button {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
+    .mobile-row {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .mobile-center {
+        align-items: center;
+    }
+
+    #footer-row {
+        flex-direction: column;
+    }
+
+    #footer-methodes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-w100 {
+        width: 100%;
+    }
+
+
+    .partenaire p.partenaire-nom {
+        margin: 1rem 0rem 0.5rem 0rem;
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    .partenaire p {
+        margin: 0px;
+        font-size: 0.8rem;
+        text-align: center;
     }
 
 
 
-    @media (max-width: 900px) {
-        .mobile-col {
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .mobile-col-reverse {
-            flex-direction: column-reverse;
-            gap: 1rem;
-        }
-
-        .mobile-row {
-            flex-direction: row;
-            gap: 1rem;
-        }
-
-        .mobile-center {
-            align-items: center;
-        }
-
-        #footer-row {
-            flex-direction: column;
-        }
-
-        #footer-methodes {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .mobile-w100 {
-            width: 100%;
-        }
-
-
-        .partenaire p.partenaire-nom {
-            margin: 1rem 0rem 0.5rem 0rem;
-            font-size: 1.2rem;
-            font-weight: 800;
-        }
-
-        .partenaire p {
-            margin: 0px;
-            font-size: 0.8rem;
-            text-align: center;
-        }
-
-
-
-        .title-block {
-            padding: 2rem;
-        }
+    .title-block {
+        padding: 2rem;
     }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+
+    #siteWrapper .sqs-button-element--secondary,
+    .sqs-block-form-lightbox .sqs-button-element--secondary,
+    #siteWrapper .sqs-button-element--primary {
+        font-size: 1.3rem;
+        align-self: center;
+    }
+
+    .sqs-block-content .sqs-block-button {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
 
 }
