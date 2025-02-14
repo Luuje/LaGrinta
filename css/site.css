@@ -46761,7 +46761,7 @@ ul {
 
 section {
     width: calc(100% - 20rem);
-    padding: 4rem 10rem;
+    padding: 3rem 10rem;
     margin: 2rem 0rem;
     display: flex;
     flex-direction: column;
@@ -46810,10 +46810,11 @@ section {
 
 #insufflez h4 {
     font-size: 10rem;
-    width: 10rem;
 }
 
+
 #insufflez p {
+    font-size: 0.95rem;
     margin-bottom: 30px;
     max-width: 600px;
     width: calc(100% - 1rem);
@@ -46837,15 +46838,17 @@ section {
 }
 
 .bloc-rouge h4 {
+    font-size: 10rem;
+    width: 10rem;
     font-style: italic;
-    margin: 1rem 2rem;
     text-align: center;
-    font-size: calc(6rem + 3vw);
+    margin: 1rem 0;
     align-self: center;
 
 }
 
 .bloc-rouge h2 {
+    font-size: 3rem;
     align-self: left;
     text-align: left;
     margin: 20px 20px 0px 20px;
@@ -46986,12 +46989,12 @@ footer p {
     background-image: url(../images/contact.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 #contact {
     margin-top: 8rem;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
 }
 
 #contact * {
@@ -47047,24 +47050,24 @@ footer p {
         margin: 6px 0px;
     }
 
-    .bloc-rouge p {
-        font-size: 1rem;
-    }
-
-    .bloc-rouge p {
-        font-size: 1rem;
-    }
-
     .bloc-rouge-wrapper {
         padding: 6px 20px;
         width: calc(100% - 40px);
+    }
+
+    #insufflez h4 {
+        font-size: 7rem;
+    }
+
+    .bloc-rouge h4 {
+        font-size: 7rem;
     }
 
     .bloc-rouge h2 {
         font-size: 2rem;
     }
 
-    #insufflez p {
+    .bloc-rouge p {
         margin-bottom: 20px;
     }
 
@@ -47167,6 +47170,10 @@ footer p {
     #contact .blur-block {
         padding: 2rem 1.5rem;
         width: calc(100% - 3rem);
+    }
+
+    #contact h4 {
+        font-size: 1.8rem;
     }
 }
 
