@@ -47175,6 +47175,10 @@ footer p {
     #contact h4 {
         font-size: 1.8rem;
     }
+
+    #contact-mail h4 {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
