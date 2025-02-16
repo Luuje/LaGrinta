@@ -117,8 +117,13 @@
 
 .bento-item-link:hover {
     cursor: pointer;
-    background-color: var(--light-red);
+    filter: drop-shadow(0px 0px 5px rgb(255, 0, 60));
 }
+
+.bento-item-title.bento-item-link:hover {}
+
+
+
 
 /* Normal Bento Items */
 .bento-item-normal {

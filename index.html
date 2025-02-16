@@ -640,14 +640,136 @@
       <article class="sections col" id="sections" style="width: 100%;" data-page-sections="675ae1570f9ab67d25897e19">
 
         <section id="accueil" class="col" style="">
-          <div id="bento-grid-placeholder" style="width: 100%; height: fit-content;"></div>
-          <script>
-            fetch('bento.html')
-              .then(response => response.text())
-              .then(data => {
-                document.getElementById('bento-grid-placeholder').innerHTML = data;
-              });
-          </script>
+          <div class="bento-grid-section">
+
+            <!-- Background SVG -->
+            <!-- <svg class="background-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500"
+                preserveAspectRatio="none">
+                <path d="
+                    M0,200 
+                    C349.2,102.45 1036.4,108.85 1300.1,182.35 
+                    L1300.1,304.5 
+                    C871.8,257.5 277.3,291.05 0.8,497.8 
+                    L0,200 
+                " fill="rgb(255,0,53)" />
+            </svg> -->
+
+
+            <div class="bento-grid">
+              <div id="cover" class="bento-item-cover  bento-item bento-item-image S"
+                style="order: 1; grid-column: 1 / 3; grid-row: span 4; ">
+                <img src="images/cover.jpg">
+              </div>
+
+              <a href="offres.html" id="prepa" class="bento-item col bento-item-title bento-item-link  S"
+                style="order: 2; grid-column: 3  / 5;">
+                <img src="images/generic_2.jpg" />
+                <div class="row" style="gap: 2rem; align-items: center; width: 100%; height: 100%;">
+                  <h3>Prépa. mentale</h3>
+                </div>
+              </a>
+
+              <a href="a-propos.html#section-certifications" id="methode-target" class="bento-item bento-item-link S"
+                style="order: 3; grid-column: 5  / 8; ">
+                <div class="row">
+                  <div style="flex: 3; "><img src="images/methode-target.png"></div>
+                </div>
+              </a>
+
+              <div id="rebranchez" class="bento-item bento-item-title S "
+                style="order: 4; grid-column: 8 / 10; grid-row: span 2;">
+                <img class="" src="images/jump.jpg" />
+                <div class="col">
+                  <h3 class="" style="">Rebranchez vos équipes</h3>
+                  <h3 class="" style="">SUR 220V</h3>
+                </div>
+              </div>
+
+              <a href="offres.html#section-formation" id="grintacademie" class="bento-item bento-item-link S"
+                style="order: 5; grid-column: 3 / 6;">
+                <div class="col" style="justify-content: space-around;">
+                  <p>Rejoignez le mouvement avec</p>
+                  <div class="col" style="flex: 1; justify-content: center;">
+                    <img src="images/lagrintacademie.png" style="width: 100%; ">
+                  </div>
+                </div>
+              </a>
+
+              <a href="offres.html#section-formation" class="bento-item col bento-item-title bento-item-link S"
+                style="order: 6; grid-column: 6  / 8;">
+                <img src="images/generic7.jpg" />
+                <div class="row" style="gap: 2rem; align-items: center; width: 100%; height: 100%;">
+                  <h3>Organisme de formation</h3>
+                </div>
+              </a>
+
+              <a href="offres.html#section-analyse-comportementale"
+                class="bento-item col bento-item-title bento-item-link S" style="order: 7; grid-column: 3  / 6;">
+                <img src="images/generic5.webp" />
+                <div class="row" style="gap: 2rem; align-items: center; width: 100%; height: 100%;">
+                  <h3>Analyse comporte- <br>mentale</h3>
+                </div>
+              </a>
+
+
+              <a href="a-propos.html#section-certifications" id="methode-disc" class="bento-item bento-item-link S"
+                style="order: 8; grid-column: 6  / 8; ">
+                <img src="images/disc.png" style="max-height: 120px">
+              </a>
+
+              <div id="accompagnees" class="bento-item bento-item-figure S" style="order: 8; grid-column: 8 / 10; ">
+                <div class="col" style="align-items: start; justify-content: space-between; height: 100%;">
+                  <h2 class="figure-number red">500+</h2>
+                  <p class="figure-text" style="">Personnes accompagnées</p>
+                </div>
+                <!-- <img src="images/para.png"
+                        style="width: 70%; position: absolute; bottom: 0px; opacity: 0.9; object-fit: cover; object-position: bottom;"> -->
+              </div>
+
+              <div id="dumental" class="bento-item bento-item-title L"
+                style="order: 10; grid-column: 5 / 10; grid-row: span 1;">
+                <img src="images/generic8.jpg" />
+                <div class="col" style="justify-content: center;">
+                  <!-- <p class="italic" style="text-align: left;">[sous-titre]</p> -->
+                  <h3 class="" style="text-align: left;">Du mental au comporte&shy;mental</h3>
+                </div>
+              </div>
+
+              <a href="a-propos.html#section-certifications" id="qualiopi" class="bento-item  bento-item-link L"
+                style="order: 9; grid-column: 3 / 5;">
+                <div class="col" style="align-items: center; width: 100%;">
+                  <img src="images/qualiopi.png" style="max-height: 100px">
+                </div>
+              </a>
+
+              <!-- <div class="bento-item bento-item-image S" style="grid-column: 9  / 10; ">
+                    <img src="images/quad.jpg">
+                </div> -->
+
+              <!-- <div class="bento-item bento-item-image XS" style="grid-column: 7  / 8;">
+                    <img src="images/diagram.png">
+                </div> -->
+
+              <!-- <div class="bento-item bento-item-image XS" style="grid-column: 8  / 10;">
+                    <img src="images/generic_0_original.jpg">
+                </div> -->
+
+              <div id="bento-button" class="bento-item bento-item-transparent bento-button M"
+                style="order: 11; grid-column: 8 / 10; margin-top: 2rem; width: 100%;">
+
+                <div class="sqs-block-button-container sqs-block-button-container--center" data-animation-role="button"
+                  data-alignment="center" data-button-size="large" data-button-type="secondary" style="width: 100%;">
+                  <a href="offres.html"
+                    class="sqs-block-button-element--large sqs-button-element--secondary sqs-block-button-element"
+                    style="width: 100%; padding: 14px 0px;">
+                    TOUTES NOS OFFRES ➜
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
         </section>
 
         <div id="sections">
