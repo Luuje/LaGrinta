@@ -46985,6 +46985,10 @@ footer p {
     width: 100%;
 }
 
+.w80 {
+    width: 80%;
+}
+
 #contact-main {
     background-image: url(../images/contact.jpg);
     background-size: cover;
@@ -47013,6 +47017,14 @@ footer p {
 
 .header-nav-item:hover a {
     transform: scale(1.05);
+}
+
+.underline-link {
+    border-bottom: solid 1px transparent;
+}
+
+.underline-link:hover {
+    border-bottom: solid 1px black;
 }
 
 @media (max-width: 900px) {
@@ -47144,6 +47156,10 @@ footer p {
         width: 100%;
     }
 
+    .mobile-hide {
+        display: none;
+    }
+
 
     .partenaire p.partenaire-nom {
         margin: 1rem 0rem 0.5rem 0rem;
@@ -47178,6 +47194,11 @@ footer p {
 
     #contact-mail h4 {
         font-size: 1.3rem;
+    }
+
+
+    .mobile-w100 {
+        width: 100%;
     }
 }
 

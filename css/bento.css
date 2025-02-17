@@ -117,7 +117,7 @@
 
 .bento-item-link:hover {
     cursor: pointer;
-    filter: drop-shadow(0px 0px 5px rgb(255, 0, 60));
+    filter: drop-shadow(0px 0px 5px rgb(255, 0, 34));
 }
 
 .bento-item-title.bento-item-link:hover {}
