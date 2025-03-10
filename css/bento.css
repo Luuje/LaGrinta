@@ -323,32 +323,36 @@
 
 
     #dumental {
-        order: 3 !important;
+        order: 1 !important;
+    }
+
+    #dumental * {
+        font-size: calc((2 - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
     }
 
     #rebranchez {
-        order: 2 !important;
+        order: 12 !important;
         grid-row: span 4 !important;
         min-height: 300px;
     }
 
     #cover {
-        order: 1 !important;
-        grid-row: span 6 !important;
+        order: 0 !important;
+        grid-row: span 2 !important;
     }
 
     #accompagnees {
-        order: 3 !important;
+        order: 11 !important;
         grid-row: span 2 !important;
     }
 
     #methode-target {
-        order: 5 !important;
+        order: 6 !important;
         grid-row: span 2 !important;
     }
 
     #grintacademie {
-        order: 6 !important;
+        order: 8 !important;
         grid-row: span 2 !important;
     }
 
@@ -358,12 +362,12 @@
     }
 
     #qualiopi {
-        order: 11 !important;
+        order: 13 !important;
         grid-row: span 2 !important;
     }
 
     #bento-button {
-        order: 12 !important;
+        order: 14 !important;
     }
 
     #prepa {
